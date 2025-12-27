@@ -7,7 +7,7 @@ import os
 import random
 import math
 from collections import defaultdict, Counter
-from janome.tokenizer import Tokenizer
+from janome.tokenizer import Tokenizer   #If you use Japanese, it is recommended, but not required.
 
 # -----------------------------
 # 設定
@@ -44,7 +44,7 @@ def load_texts(directory):
                 out.append(fh.read())
     return out
 
-def tokenize(text):
+def tokenize(text):  # Now, change the function content so that it converts the text into tokens and outputs them as return values.
     return [t.surface for t in tokenizer.tokenize(text)]
 
 # -----------------------------
@@ -242,4 +242,5 @@ if __name__ == "__main__":
     theme_gene_set = seed_theme_genes(vocab, ivocab, theme_tokens, genes)
 
     print(generate(chain, genes, ivocab, phases, theme_gene_set))
+
 
