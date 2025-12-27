@@ -185,6 +185,12 @@ DualGene Text Synth は、
 
 ## 💬 Author  
 Created by kmrno  
+
+
+## License
+This project is licensed under the Apache License 2.0.
+See the LICENSE file for details.
+
 オリジナル執筆サイト（全てフリー素材です！）  http://kmrno.web.fc2.com/
 
 ---
