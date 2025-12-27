@@ -12,7 +12,7 @@ from janome.tokenizer import Tokenizer
 # -----------------------------
 # 設定
 # -----------------------------
-TARGET_DIR = r"C:\Users\kmrno\Desktop\output"
+TARGET_DIR = r"C:\Users\***" # Please input your textfiles corpus folder
 ENCODING = "utf-8"
 
 GRAM = 8
@@ -23,12 +23,12 @@ SIM_ROUNDS = 5
 PHASE_PERIOD = 97.0
 LATENT_PROB = 0.5
 
-THEME_TEXT = "黄泉の死神の手招きが見える"
+THEME_TEXT = "黄泉の死神の手招きが見える" # Please specify the theme of the text you want to generate.
 THEME_GAIN = 7.0
 DOMINANT_GAIN = 8.5
 
 # 周期埋め込み
-CYCLE_LENGTHS = [3, 7, 13]
+CYCLE_LENGTHS = [3, 7, 13]   # Try changing the values ​​a bit.
 
 tokenizer = Tokenizer()
 
@@ -242,3 +242,4 @@ if __name__ == "__main__":
     theme_gene_set = seed_theme_genes(vocab, ivocab, theme_tokens, genes)
 
     print(generate(chain, genes, ivocab, phases, theme_gene_set))
+
